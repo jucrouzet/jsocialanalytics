@@ -226,6 +226,7 @@
 					pageTracker._initData();
 					pageTracker._trackPageview();
 					pageTracker._setVar(userDefinedValues);
+					$.socialAnalytics.log('Tracking done', settings);
 		        } catch(err) {
 		        	$.socialAnalytics.log(ex, settings);
 		        }
