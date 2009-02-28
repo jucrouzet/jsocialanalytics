@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="Content-Style-Type" content="text/css" />
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js" charset="utf-8"></script>
+		<script type="text/javascript" src="jquery.socialanalytics.min.js" charset="utf-8"></script>
+		<title>jSocialAnalytics Test Page</title>
+	</head>
+
+	<body id="body">
+		<h1>Test page</h1>
+		<script type="text/javascript">
+			var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+			document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+		</script>
+
+		<script type="text/javascript" charset="utf-8">
+		// <![CDATA[
+			$('body').tagAnalytics({
+				addVariables :	['logged', 'french'],
+				debug :			true,
+				propertyID :	'UA-4089956-7',
+				sites :			$.extend({'my site' : ['http://www.example.com']}, $.socialAnalytics.defaults.sites)
+			});
+		// ]]>
+		</script>
+	</body>
+</html>
