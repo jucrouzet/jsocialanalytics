@@ -12,5 +12,7 @@ sites must be an object with this format :
 
 {{{
 {
-	'site name sent to google analytics': ['http://url1', 'http://url2', ...]
+	'site name sent to google analytics': ['http://url1', 'http://url2', ...],
+	'second site': ['http://www.xxxxx.com']
+}
 }}}
